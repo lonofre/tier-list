@@ -1,0 +1,14 @@
+{
+    "directories": {
+        "sDir": "images/s",
+        "aDir": "images/a",
+        "bDir": "images/b",
+        "cDir": "images/c",
+        "dDir": "images/d",
+        "eDir": "images/e",
+        "fDir": "images/f"
+    },
+    "squareSize": 80,
+    "squaresPerRow": 5,
+    "tierRows": 5
+}
