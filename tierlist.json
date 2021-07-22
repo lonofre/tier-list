@@ -1,14 +1,42 @@
 {
-    "directories": {
-        "sDir": "images/s",
-        "aDir": "images/a",
-        "bDir": "images/b",
-        "cDir": "images/c",
-        "dDir": "images/d",
-        "eDir": "images/e",
-        "fDir": "images/f"
-    },
+    "directories": [
+        {
+            "name": "s",
+            "priority" : 1,
+            "directory": "image/s",
+            "color": "21321"
+        }, 
+        {
+            "name": "a",
+            "priority" : 2,
+            "directory": "image/a",
+            "color": "21321"
+        },
+        {
+            "name": "b",
+            "priority" : 3,
+            "directory": "image/b",
+            "color": "21321"
+        },
+        {
+            "name": "c",
+            "priority" : 4,
+            "directory": "image/c",
+            "color": "21321"
+        },
+        {
+            "name": "d",
+            "priority" : 5,
+            "directory": "image/d",
+            "color": "21321"
+        },
+        {
+            "name": "e",
+            "priority" : 6,
+            "directory": "image/e",
+            "color": "21321"
+        }
+    ],
     "squareSize": 80,
-    "squaresPerRow": 5,
-    "tierRows": 5
+    "squaresPerRow": 5
 }

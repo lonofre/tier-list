@@ -22,4 +22,5 @@ executable tier-list
     hip >= 1.5,
     aeson >= 1.5,
     bytestring >= 0.10,
-    text >= 1.2
+    text >= 1.2,
+    directory >= 1.3
