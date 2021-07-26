@@ -7,7 +7,6 @@ import qualified Graphics.Image.Interface as Interface
 import Colors
 import TierList
 
-
 -- | Scales and crops an image, so it will look like as a square,
 -- based on the smalles size of the image
 toSquare :: 
@@ -45,12 +44,20 @@ drawTier ::    Tier
             -> I.Image I.VU I.RGB Double
 drawTier (Tier _ priority images)
          size 
-         squaresPerRow = let chunks = map (fillChunk squaresPerRow size)  $ chunksOf squaresPerRow images
+         squaresPerRow = let chunks = map (fillChunk squaresPerRow size) $ avoidEmpty  $ chunksOf squaresPerRow images
                              prioritySquare = square (priorityColor priority) size
                              -- This works as the base case when joining the images topToBottom
                              emptyImage = I.makeImageR I.VU (1, (squaresPerRow + 1) * size) $ priorityColor 0
                          in foldr I.topToBottom emptyImage $ map (foldl I.leftToRight prioritySquare) chunks  
                          
+
+-- | This helps to fill the chuks if chucksOf returns [], because map
+-- cannot be applied to just [], it needs to be [[]]
+avoidEmpty :: [[a]] -> [[a]]
+avoidEmpty [] = [[]]
+avoidEmpty xs = xs
+
+
 -- | Fills the lists with images of the same color, so
 -- when joining the images all lists have the same size
 fillChunk ::    Int

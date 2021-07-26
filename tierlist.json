@@ -29,8 +29,13 @@
             "name": "e",
             "priority" : 6,
             "directory": "images/e"
+        },
+        {
+            "name": "f",
+            "priority" : 7,
+            "directory": "images/f"	
         }
     ],
-    "squareSize": 80,
-    "squaresPerRow": 5
+    "squareSize": 200,
+    "squaresPerRow": 10 
 }

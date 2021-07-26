@@ -5,6 +5,7 @@ import Graphics.Image.ColorSpace
 -- | Given the priority of status, a color function is returned
 priorityColor :: Int -> ((Int, Int) -> Pixel RGB Double)
 priorityColor n = case n of
+                  0 -> dark
                   1 -> red
                   2 -> orange
                   3 -> yellow
@@ -40,6 +41,8 @@ purple _ = pixel 127 126 255
 pink :: (Int, Int) -> Pixel RGB Double
 pink _ = pixel 255 126 254
 
-black :: (Int, Int) -> Pixel RGB Double
-black _ = pixel 27 26 27
+dark :: (Int, Int) -> Pixel RGB Double
+dark _ = pixel 27 26 27
 
+black :: (Int, Int) -> Pixel RGB Double
+black _ = pixel 0 0 0
