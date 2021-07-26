@@ -27,7 +27,6 @@ data TierDir =
     TierDir { name      :: !String
              , directory :: !String
              , priority  :: !Int
-             , color :: !String
     } deriving Show 
 
 instance FromJSON TierDir where
@@ -35,5 +34,4 @@ instance FromJSON TierDir where
                            <$> v .: "name"
                            <*> v .: "directory"
                            <*> v .: "priority"
-                           <*> v .: "color"
     parseJSON _ = mempty

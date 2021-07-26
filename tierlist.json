@@ -3,38 +3,32 @@
         {
             "name": "s",
             "priority" : 1,
-            "directory": "image/s",
-            "color": "21321"
+            "directory": "images/s"
         }, 
         {
             "name": "a",
             "priority" : 2,
-            "directory": "image/a",
-            "color": "21321"
+            "directory": "images/a"
         },
         {
             "name": "b",
             "priority" : 3,
-            "directory": "image/b",
-            "color": "21321"
+            "directory": "images/b"
         },
         {
             "name": "c",
             "priority" : 4,
-            "directory": "image/c",
-            "color": "21321"
+            "directory": "images/c"
         },
         {
             "name": "d",
             "priority" : 5,
-            "directory": "image/d",
-            "color": "21321"
+            "directory": "images/d"
         },
         {
             "name": "e",
             "priority" : 6,
-            "directory": "image/e",
-            "color": "21321"
+            "directory": "images/e"
         }
     ],
     "squareSize": 80,

@@ -1,9 +1,10 @@
 module TierList where
+import qualified Graphics.Image as I
+import Graphics.Image.Interface as Interface
 
 
 data Tier = Tier { name :: !String
-                 , color :: !String
                  , priority :: !Int
-                 , images :: ![String]
+                 , images :: ![I.Image I.VU I.RGB Double]
             }
 
